@@ -1,0 +1,110 @@
+{
+    "hsr_phainon": {
+        "character_name": "phainon",
+        "game": "HSR",
+        "source": "Prydwen",
+        "build_name": "Mejor Build General (Analizada por Gemini)",
+        "weapon_recommendations": [
+            "Así Amanece el Alba",
+            "En la Caída de un Eón",
+            "Algo Irreemplazable",
+            "Un Rastro de Sangre Pasada"
+        ],
+        "artifact_set_recommendations": [
+            "Capitán Rompeolas",
+            "Erudito Perdido en la Erudición",
+            "Campeón de Boxeo Callejero",
+            "Genio de Estrellas Brillantes",
+            "Poeta del Colapso Lúgubre",
+            "Capitán Rompeolas (2 piezas) + Erudito Perdido en la Erudición (2 piezas)"
+        ],
+        "planetary_set_recommendations": [
+            "Arcadia de Sueños Tejidos",
+            "Arena Rutilante"
+        ],
+        "main_stats_recommendations": {
+            "body": "Tasa CRIT > Daño CRIT",
+            "feet": "Velocidad = ATQ%",
+            "planar_sphere": "Daño Físico > ATQ%",
+            "link_rope": "ATQ%"
+        },
+        "final_stats_targets": {
+            "HP": "3200+",
+            "DEF": "1000+",
+            "ATK": "2200 - 2600+",
+            "CRIT Rate": "90-100%",
+            "CRIT DMG": "160-180% +",
+            "SPD": "",
+            "Energy Regen Rate": "",
+            "Effect RES": "",
+            "Effect HIT Rate": "",
+            "Break Effect": ""
+        },
+        "team_recommendations": [
+            [
+                "Phainon",
+                "Domingo",
+                "Bronya",
+                "Ruan Mei"
+            ],
+            [
+                "Phainon",
+                "Domingo",
+                "Bronya",
+                "Robin"
+            ],
+            [
+                "Phainon",
+                "Domingo",
+                "Bronya",
+                "Huohuo"
+            ]
+        ],
+        "Analisis_Gemini": "Build seleccionada porque fue la fuente elegida por el usuario: Prydwen."
+    },
+    "hsr_cerydra": {
+        "character_name": "세리드라",
+        "game": "HSR",
+        "source": "Prydwen",
+        "build_name": "Mejor Build General (Analizada por Gemini)",
+        "weapon_recommendations": [
+            "시대를 새긴 황금 피 (S1)",
+            "야경 속으로 흐르는 불빛 (S1)",
+            "영원한 식량 (S5)"
+        ],
+        "artifact_set_recommendations": [
+            "구도자의 재현된 시련 (4세트)",
+            "황야의 번개 (4세트)",
+            "장수 만세 해커 스페이스 (2세트)"
+        ],
+        "planetary_set_recommendations": [
+            "루샤카: 잠긴 바다 (2세트)",
+            "페나코니: 꿈의 땅 (2세트)",
+            "부서진 용골 (2세트)"
+        ],
+        "main_stats_recommendations": {
+            "body": "공격력%",
+            "feet": "속도 > 공격력%",
+            "planar_sphere": "공격력%",
+            "link_rope": "에너지 회복효율 > 공격력%"
+        },
+        "final_stats_targets": {
+            "HP": "3500 - 4000+",
+            "DEF": "1000 - 1200+",
+            "ATK": "4000+",
+            "CRIT Rate": "",
+            "CRIT DMG": "",
+            "SPD": "140+",
+            "Energy Regen Rate": "",
+            "Effect RES": "",
+            "Effect HIT Rate": "",
+            "Break Effect": ""
+        },
+        "team_recommendations": [
+            "세리드라, 파이논, 스파클, 링스",
+            "세리드라, 아낙사, 브로냐, 게파드",
+            "세리드라, 파이논, 로빈, 링스"
+        ],
+        "Analisis_Gemini": "Build seleccionada porque fue la fuente elegida por el usuario: Prydwen."
+    }
+}

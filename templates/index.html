@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Asistente de Builds</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <img class="side-image" id="left-image" src="{{ url_for('static', filename='logo.png') }}" alt="Decoración izquierda">
+    <img class="side-image" id="right-image" src="{{ url_for('static', filename='logo_letras.png') }}" alt="Decoración derecha">
+    
+    <img class="game-icon" id="game-icon-display" src="" alt="Game Icon">
+        
+    <div id="chat-container">
+        <div id="chat-window">
+            <div class="message agent">¡Hola! Pide la build de tu personaje (ej: "build de Furina GI").</div>
+        </div>
+        <form id="chat-form">
+            <input id="user-input" type="text" placeholder="Escribe tu mensaje...">
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script>
+
+        const chatForm = document.getElementById('chat-form');
+        const userInput = document.getElementById('user-input');
+        const chatWindow = document.getElementById('chat-window');
+
+        const HSR_ICON_PATH = "{{ url_for('static', filename='icon-hsr.png') }}";
+        const ZZZ_ICON_PATH = "{{ url_for('static', filename='icon-zzz.png') }}";
+        const GI_ICON_PATH = "{{ url_for('static', filename='icon-gi.png') }}";
+
+        let conversationState = { step: 'initial' };
+
+        chatForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const messageText = userInput.value.trim();
+            if (!messageText) return;
+
+            appendMessage(messageText, 'user');
+            userInput.value = '';
+
+            try {
+                const response = await fetch('/chat', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        message: messageText,
+                        state: conversationState
+                    })
+                });
+
+                const data = await response.json();
+
+                if (data.game) {
+                    updateGameIcon(data.game);
+                }
+
+                conversationState = data.state;
+
+                appendMessage(data.response, 'agent');
+
+                if (data.data) {
+                    const tableHtml = createBuildTable(data.data);
+                    appendMessage(tableHtml, 'agent');
+
+                    if (data.images && Array.isArray(data.images) && data.images.length > 0) {
+                        const imagesHtml = createImagesHtml(data.images);
+                        appendMessage(imagesHtml, 'agent');
+                    }
+                }
+
+            } catch (error) {
+                console.error(error);
+                appendMessage('Error de conexión con el servidor.', 'agent');
+            }
+        });
+
+        function appendMessage(text, role) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${role}`;
+            messageDiv.innerHTML = text; 
+            chatWindow.appendChild(messageDiv);
+            chatWindow.scrollTop = chatWindow.scrollHeight;
+        }
+        
+        function createBuildTable(buildData) {
+            let tableRows = '';
+
+            const isValueValid = (val) => {
+                if (val === null || val === undefined) return false;
+                
+                if (typeof val === 'string') {
+                    if (val.trim() === "") return false;
+                    if (val.toLowerCase().includes('no encontrado')) return false;
+                    return true;
+                }
+
+                if (Array.isArray(val)) {
+                    if (val.length === 0) return false;
+                    return val.some(item => isValueValid(item));
+                }
+                
+                if (typeof val === 'object') {
+                    const keys = Object.keys(val);
+                    if (keys.length === 0) return false;
+                    return Object.values(val).some(subVal => isValueValid(subVal));
+                }
+                
+                return true; 
+            };
+
+            const formatKey = (key) => key.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+
+            const formatValue = (value) => {
+                if (Array.isArray(value)) {
+                    const validItems = value.filter(item => isValueValid(item));
+                    return '<ul>' + validItems.map(item => `<li>${item}</li>`).join('') + '</ul>';
+                }
+                if (typeof value === 'object' && value !== null) {
+                    return '<ul>' + Object.entries(value)
+                        .filter(([subKey, subValue]) => isValueValid(subValue)) // <-- ¡Filtro interno!
+                        .map(([subKey, subValue]) => `<li><strong>${formatKey(subKey)}:</strong> ${subValue}</li>`)
+                        .join('') + '</ul>';
+                }
+                return value;
+            };
+
+            for (const key in buildData) {
+                const value = buildData[key];
+
+                if (isValueValid(value)) { 
+                    tableRows += `
+                        <tr>
+                            <td>${formatKey(key)}</td>
+                            <td>${formatValue(value)}</td>
+                        </tr>
+                    `;
+                }
+            }
+            
+            return `<div class="overflow-x-auto"><table class="build-table">${tableRows}</table></div>`;
+        }
+    
+        function createImagesHtml(imageUrls) {
+            if (!imageUrls || imageUrls.length === 0) return '';
+            const imgs = imageUrls.map(url => `<img src="${url}" loading="lazy" alt="imagen">`).join('');
+            return `<div class="images-container"><strong>Imágenes encontradas:</strong><div class="images-row">${imgs}</div></div>`;
+        }
+        
+        function updateGameIcon(game) {
+            const iconElement = document.getElementById('game-icon-display');
+            if (!iconElement) return;
+
+            let newSrc = "";
+            switch (game.toUpperCase()) {
+                case 'HSR':
+                    newSrc = HSR_ICON_PATH;
+                    break;
+                case 'ZZZ':
+                    newSrc = ZZZ_ICON_PATH;
+                    break;
+                case 'GI':
+                    newSrc = GI_ICON_PATH;
+                    break;
+                default:
+                    // Si el juego no es uno de esos, ocultar el icono
+                    iconElement.classList.remove('visible');
+                    return;
+            }
+
+            // Si la imagen ya es la correcta, solo asegúrate de que sea visible
+            if (iconElement.src.endsWith(newSrc)) {
+                if (!iconElement.classList.contains('visible')) {
+                    iconElement.classList.add('visible');
+                }
+                return;
+            }
+
+            // Si la imagen es nueva, ocúltala, cámbiala y muéstrala
+            iconElement.classList.remove('visible');
+            
+            // Espera un poco para que la transición de opacidad funcione
+            setTimeout(() => {
+                iconElement.src = newSrc;
+                iconElement.classList.add('visible');
+            }, 200); // 200ms de retraso
+        }
+        
+    </script>
+</body>
+</html>

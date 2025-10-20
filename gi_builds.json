@@ -1,0 +1,465 @@
+{
+    "gi_nahida": {
+        "character_name": "nahida",
+        "game": "GI",
+        "source": "GenshinBuilds",
+        "build_name": "Mejor Build General (Analizada por Gemini)",
+        "weapon_recommendations": [
+            "Sueños de las Mil Noches",
+            "Hibernación Matutina de Año Nuevo",
+            "Axioma de la Kagura",
+            "Memorias de Sacrificios",
+            "Laúd de la Luz Celestial",
+            "Estrella Errabunda",
+            "Sinfonía de los Merodeadores",
+            "Jade Sacrificial",
+            "Pergamino Celestial",
+            "Oración Perdida a los Vientos Sagrados",
+            "Candado Terrenal",
+            "Perla Solar",
+            "Códice de Favonius",
+            "Carta Náutica",
+            "Guía Mágica",
+            "Anillo de Hakushin",
+            "Cuentos de Cazadores de Dragones",
+            "Prototipo Ámbar"
+        ],
+        "artifact_set_recommendations": [
+            "Recuerdos del Bosque (4)",
+            "Sueños Áureos (4)",
+            "Compañía Dorada (4)",
+            "Tenacidad de la Geoarmada (4)",
+            "Flor Olvidada del Paraíso (4)",
+            "2 piezas de Maestría Elemental",
+            "Recuerdos del Bosque (2) + Sueños Áureos (2)",
+            "Recuerdos del Bosque (2) + Orquesta del Errante (2)",
+            "Sueños Áureos (2) + Orquesta del Errante (2)"
+        ],
+        "main_stats_recommendations": {
+            "sands": "Maestría Elemental",
+            "goblet": "Maestría Elemental / Bono de Daño Dendro",
+            "circlet": "Maestría Elemental / Prob. CRIT / Daño CRIT"
+        },
+        "final_stats_targets": {
+            "Vida": "",
+            "ATK": "",
+            "DEF": "",
+            "Probabilidad Critica": "",
+            "Daño Critico": "",
+            "Maestria Elemental": "",
+            "Recarga de Energía": ""
+        },
+        "team_recommendations": [
+            "Equipo No Encontrado",
+            "Equipo No Encontrado",
+            "Equipo No Encontrado"
+        ],
+        "Analisis_Gemini": "Build seleccionada porque fue la fuente elegida por el usuario: GenshinBuilds."
+    },
+    "gi_alhacen": {
+        "character_name": "alhacen",
+        "game": "GI",
+        "source": "GameWithJP",
+        "build_name": "Mejor Build General (Analizada por Gemini)",
+        "weapon_recommendations": [],
+        "artifact_set_recommendations": [],
+        "main_stats_recommendations": {
+            "sands": "Arena del Tiempo",
+            "goblet": "Cáliz de Eonotemo",
+            "circlet": "Tiara de Logos"
+        },
+        "final_stats_targets": {
+            "Vida": "",
+            "ATK": "",
+            "DEF": "",
+            "Probabilidad Critica": "",
+            "Daño Critico": "",
+            "Maestria Elemental": "",
+            "Recarga de Energía": ""
+        },
+        "team_recommendations": [
+            {
+                "team_name": "Equipo No Encontrado",
+                "characters": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "team_name": "Equipo No Encontrado",
+                "characters": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "team_name": "Equipo No Encontrado",
+                "characters": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "Analisis_Gemini": "Build seleccionada porque fue la fuente elegida por el usuario: GenshinBuilds."
+    },
+    "gi_hu_tao": {
+        "character_name": "hu tao",
+        "game": "GI",
+        "source": "GenshinBuilds",
+        "build_name": "Mejor Build General (Analizada por Gemini)",
+        "weapon_recommendations": [
+            "Báculo de Homa",
+            "Báculo de las Arenas Escarlatas",
+            "Balada de los Fiordos",
+            "Elegía Lumidulce",
+            "Perdición del Dragón",
+            "Lanza del Duelo",
+            "Halcón de Jade",
+            "Lanza Lítica",
+            "Alabarda del Viento Epistolar",
+            "Borla Blanca",
+            "Lanza del Peñasco Oscuro",
+            "Cruz de Kitain",
+            "Retribución de la Justicia"
+        ],
+        "artifact_set_recommendations": [
+            "Bruja Carmesí en Llamas (4)",
+            "Reminiscencia de la Purificación (4)",
+            "Sueños Áureos (4)",
+            "Cazador Fantasmal (4)",
+            "Bruja Carmesí en Llamas (2) + Orquesta del Errante (2)",
+            "Bruja Carmesí en Llamas (2) + Final del Gladiador (2)"
+        ],
+        "main_stats_recommendations": {
+            "sands": "Vida% / Maestría Elemental",
+            "goblet": "Bono de Daño Pyro",
+            "circlet": "Prob. CRIT / Daño CRIT"
+        },
+        "final_stats_targets": {
+            "Vida": "",
+            "ATK": "",
+            "DEF": "",
+            "Probabilidad Critica": "",
+            "Daño Critico": "",
+            "Maestria Elemental": "",
+            "Recarga de Energía": ""
+        },
+        "team_recommendations": [
+            {
+                "team_name": "Equipo No Encontrado",
+                "characters": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "team_name": "Equipo No Encontrado",
+                "characters": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "team_name": "Equipo No Encontrado",
+                "characters": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            }
+        ],
+        "Analisis_Gemini": "Build seleccionada porque fue la fuente elegida por el usuario: GenshinBuilds."
+    },
+    "gi_nilou": {
+        "character_name": "nilou",
+        "game": "GI",
+        "source": "GenshinBuilds",
+        "build_name": "Mejor Build General (Analizada por Gemini)",
+        "weapon_recommendations": [
+            "Llave de la Coronación",
+            "Sable de la Dársena",
+            "Silbido Melifluo",
+            "Llamada de la Serenidad",
+            "Espina de Hierro",
+            "Espada de Favonius",
+            "Luz Lunar de Xifos"
+        ],
+        "artifact_set_recommendations": [
+            "Recuerdos del Bosque",
+            "Tenacidad de la Geoarmada",
+            "Fulgor de Vurukasha",
+            "Orquesta del Errante",
+            "Sueños Áureos",
+            "Corazón de las Profundidades",
+            "Flor Olvidada del Paraíso"
+        ],
+        "main_stats_recommendations": {
+            "sands": "Vida",
+            "goblet": "Vida",
+            "circlet": "Vida"
+        },
+        "final_stats_targets": {
+            "Vida": "",
+            "ATK": "",
+            "DEF": "",
+            "Probabilidad Critica": "",
+            "Daño Critico": "",
+            "Maestria Elemental": "",
+            "Recarga de Energía": ""
+        },
+        "team_recommendations": [
+            "Equipo No Encontrado",
+            "Equipo No Encontrado",
+            "Equipo No Encontrado"
+        ],
+        "Analisis_Gemini": "Build seleccionada porque fue la fuente elegida por el usuario: GenshinBuilds."
+    },
+    "gi_neffer": {
+        "character_name": "Nefel",
+        "game": "GI",
+        "source": "GameWithJP",
+        "build_name": "Mejor Build General (Analizada por Gemini)",
+        "weapon_recommendations": [],
+        "artifact_set_recommendations": [],
+        "main_stats_recommendations": {
+            "sands": "Arena del Tiempo",
+            "goblet": "Cáliz de Eonotemo",
+            "circlet": "Tiara de Logos"
+        },
+        "final_stats_targets": {
+            "Vida": "",
+            "ATK": "",
+            "DEF": "",
+            "Probabilidad Critica": "",
+            "Daño Critico": "",
+            "Maestria Elemental": "",
+            "Recarga de Energía": ""
+        },
+        "team_recommendations": [
+            {
+                "team_name": "Equipo No Encontrado",
+                "characters": []
+            },
+            {
+                "team_name": "Equipo No Encontrado",
+                "characters": []
+            },
+            {
+                "team_name": "Equipo No Encontrado",
+                "characters": []
+            }
+        ],
+        "Analisis_Gemini": "Build seleccionada porque fue la fuente elegida por el usuario: GenshinBuilds."
+    },
+    "gi_raiden_shogun": {
+        "character_name": "Raiden Shogun",
+        "game": "GI",
+        "source": "GameWithJP",
+        "build_name": "Mejor Build General (Analizada por Gemini)",
+        "weapon_recommendations": [],
+        "artifact_set_recommendations": [
+            "Emblema del Destino"
+        ],
+        "main_stats_recommendations": {
+            "sands": "Arena del Tiempo",
+            "goblet": "Cáliz de Eonotemo",
+            "circlet": "Tiara de Logos"
+        },
+        "final_stats_targets": {
+            "Vida": "",
+            "ATK": "",
+            "DEF": "",
+            "Probabilidad Critica": "",
+            "Daño Critico": "",
+            "Maestria Elemental": "",
+            "Recarga de Energía": ""
+        },
+        "team_recommendations": [
+            {
+                "team_name": "Raiden National",
+                "characters": [
+                    "Raiden Shogun",
+                    "Xiangling",
+                    "Bennett",
+                    "Xingqiu"
+                ]
+            },
+            {
+                "team_name": "Raiden Hypercarry",
+                "characters": [
+                    "Raiden Shogun",
+                    "Kujou Sara",
+                    "Kaedehara Kazuha",
+                    "Bennett"
+                ]
+            },
+            {
+                "team_name": "Raiden Hyperbloom",
+                "characters": [
+                    "Raiden Shogun",
+                    "Nahida",
+                    "Xingqiu",
+                    "Baizhu"
+                ]
+            }
+        ],
+        "Analisis_Gemini": "Build seleccionada porque fue la fuente elegida por el usuario: GenshinBuilds."
+    },
+    "gi_lauma": {
+        "character_name": "lauma",
+        "game": "GI",
+        "source": "GenshinBuilds",
+        "build_name": "Mejor Build General (Analizada por Gemini)",
+        "weapon_recommendations": [
+            "A Thousand Floating Dreams",
+            "Fruit of Fulfillment",
+            "Wandering Evenstar",
+            "New Year's Morning Slumber",
+            "Mappa Mare",
+            "Sacrificial Fragments"
+        ],
+        "artifact_set_recommendations": [
+            "Flower of Paradise Lost (4-piece)",
+            "Deepwood Memories (4-piece)",
+            "Gilded Dreams (4-piece)",
+            "Gilded Dreams (2-piece), Wanderer's Troupe (2-piece)",
+            "Flower of Paradise Lost (2-piece), Wanderer's Troupe (2-piece)"
+        ],
+        "main_stats_recommendations": {
+            "sands": "Energy Recharge / Elemental Mastery",
+            "goblet": "Elemental Mastery",
+            "circlet": "Elemental Mastery"
+        },
+        "final_stats_targets": {
+            "HP": "",
+            "ATK": "",
+            "DEF": "",
+            "Crit Rate": "",
+            "Crit Damage": "",
+            "Elemental Mastery": "",
+            "Energy Recharge": ""
+        },
+        "team_recommendations": [
+            "Equipo No Encontrado",
+            "Equipo No Encontrado",
+            "Equipo No Encontrado"
+        ],
+        "Analisis_Gemini": "Build seleccionada porque fue la fuente elegida por el usuario: GenshinBuilds."
+    },
+    "gi_raiden": {
+        "character_name": "라이덴",
+        "game": "GI",
+        "source": "GenshinBuilds",
+        "build_name": "최고의 일반 빌드 (Gemini 분석)",
+        "weapon_recommendations": [
+            "예초의 번개",
+            "어획 R5",
+            "천공의 마루",
+            "용학살창",
+            "화박연",
+            "호마의 지팡이",
+            "적색 사막의 지팡이",
+            "향기의 교향곡",
+            "종말 탄식의 노래",
+            "재앙의 칼날",
+            "결투의 창",
+            "관홍",
+            "파도 베는 지느러미",
+            "천암고검",
+            "페보니우스 장창",
+            "문복",
+            "키타인 십자창"
+        ],
+        "artifact_set_recommendations": [
+            "절연의 기치 4세트",
+            "낙원의 꽃 4세트",
+            "황금의 꿈 4세트",
+            "견고한 천암 4세트",
+            "2세트 원소 마스터리 + 2세트 원소 마스터리",
+            "절연의 기치 2세트 + 검투사의 피날레 2세트",
+            "황금의 꿈 2세트 + 유랑악단 2세트",
+            "왕실의 의식 2세트 + 번개 같은 분노 2세트",
+            "공격력 18% 2세트 + 절연의 기치 2세트"
+        ],
+        "main_stats_recommendations": {
+            "sands": "원소 마스터리 / 원소 충전 효율 / 공격력%",
+            "goblet": "원소 마스터리 / 번개 원소 피해 보너스 / 공격력%",
+            "circlet": "원소 마스터리 / 치명타 확률 / 치명타 피해"
+        },
+        "final_stats_targets": {
+            "체력": "",
+            "공격력": "",
+            "방어력": "",
+            "치명타 확률": "",
+            "치명타 피해": "",
+            "원소 마스터리": "",
+            "원소 충전 효율": ""
+        },
+        "team_recommendations": [
+            "팀 구성 없음",
+            "팀 구성 없음",
+            "팀 구성 없음"
+        ],
+        "Analisis_Gemini": "Build seleccionada porque fue la fuente elegida por el usuario: GenshinBuilds."
+    },
+    "gi_skirk": {
+        "character_name": "스커크",
+        "game": "원신",
+        "source": "GenshinBuilds",
+        "build_name": "Mejor Build General (Analizada por Gemini)",
+        "weapon_recommendations": [
+            "하늘색 광휘",
+            "훗수의 잔물결 달",
+            "안개의 칼날",
+            "반암결록",
+            "에슈의 재앙",
+            "우라쿠의 미사키 칼자루",
+            "유죄",
+            "찬란한 엽록소",
+            "심연의 진혼곡",
+            "무공의 검",
+            "흑검"
+        ],
+        "artifact_set_recommendations": [
+            "진사의 모래 4세트",
+            "사막의 유랑자 4세트",
+            "검투사의 피날레 4세트",
+            "공격력 +18% 2세트 2개 조합",
+            "얼음바람 속에서 길잃은 용사 4세트",
+            "그림자 사냥꾼 4세트",
+            "진사의 모래 2세트 + 그림자 사냥꾼 2세트",
+            "얼음바람 속에서 길잃은 용사 2세트 + 진사의 모래 2세트"
+        ],
+        "main_stats_recommendations": {
+            "sands": "시간의 모래: 공격력%",
+            "goblet": "공간의 성배: 얼음 원소 피해 보너스 / 공격력%",
+            "circlet": "이성의 왕관: 치명타 확률 / 치명타 피해"
+        },
+        "final_stats_targets": {
+            "생명의 계약": "",
+            "공격력": "",
+            "방어력": "",
+            "치명타 확률": "",
+            "치명타 피해": "",
+            "원소 마스터리": "",
+            "원소 충전 효율": ""
+        },
+        "team_recommendations": [
+            "Equipo No Encontrado",
+            "Equipo No Encontrado",
+            "Equipo No Encontrado"
+        ],
+        "Analisis_Gemini": "Build seleccionada porque fue la fuente elegida por el usuario: GenshinBuilds."
+    }
+}
